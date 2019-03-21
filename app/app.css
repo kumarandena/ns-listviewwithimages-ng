@@ -1,0 +1,22 @@
+@import '~nativescript-theme-core/css/core.light.css';
+
+.action-bar {
+    background-color: #f2f4f5;
+}
+
+.actionBarLabel {
+    font-family: 'Open Sans', 'OpenSans-Bold';
+    font-weight: bold;
+}
+
+.countryName {
+    color: #33393d;
+    font-family: 'Open Sans', 'OpenSans-Bold';
+    font-weight: bold;
+}
+
+.countryPop {
+    color: darkgray;
+    font-family: 'Open Sans', 'OpenSans-Regular';
+    font-size: 12;
+}

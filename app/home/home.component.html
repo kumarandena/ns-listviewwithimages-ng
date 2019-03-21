@@ -1,0 +1,26 @@
+<ActionBar class="action-bar">
+    <Label text="Countries" class="actionBarLabel"></Label>
+</ActionBar>
+
+<GridLayout tkExampleTitle tkToggleNavButton>
+    <RadListView [items]="countries" marginRight="-2">
+        <ListViewGridLayout tkListViewLayout scrollDirection="Vertical"
+            itemHeight="200" spanCount="2">
+        </ListViewGridLayout>
+        <ng-template tkListItemTemplate let-item="item">
+            <GridLayout backgroundColor="White">
+                <GridLayout margin="15">
+                    <Image src="{{ item.imageSrc }}" stretch="aspectFill"></Image>
+                    <GridLayout verticalAlignment="bottom">
+                        <StackLayout backgroundColor="#BBFFFFFF" paddingTop="8"
+                            paddingBottom="8" paddingLeft="16" paddingRight="16">
+                            <Label text="{{ item.name }}" class="countryName"></Label>
+                            <Label text="{{ 'Pop: ' + item.population }}"
+                                class="countryPop"></Label>
+                        </StackLayout>
+                    </GridLayout>
+                </GridLayout>
+            </GridLayout>
+        </ng-template>
+    </RadListView>
+</GridLayout>
